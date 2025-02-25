@@ -18,10 +18,14 @@ const api = (productId = null) => {
         const data = await response.json();
 
         if (productId) {
-          setProduct(data);  
+          setProduct(data);
         } else {
-          setProducts(data);  
-          const uniqueCategories = ["all", ...new Set(data.map((p) => p.category))];
+          
+          const filteredProducts = data.filter((p) => p.category !== "electronics");
+          setProducts(filteredProducts);
+
+
+          const uniqueCategories = ["all", ...new Set(filteredProducts.map((p) => p.category))];
           setCategories(uniqueCategories);
         }
         setLoading(false);
