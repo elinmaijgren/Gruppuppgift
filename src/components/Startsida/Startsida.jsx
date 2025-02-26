@@ -49,7 +49,7 @@ const Startsida = () => {
 
 	return (
 		<div className="startsida-container">
-			{/* Klickbar rubrik som återställer startsidan */}
+			{}
 			<h1 className="home-title" onClick={() => setSelectedCategory(null)}>
 				BLAAAA
 			</h1>
