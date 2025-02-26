@@ -38,7 +38,7 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	text-align: center;
-	height: 650px;
+	height: 700px; /* ändra här */
 }
 
 .model-card:hover {
@@ -46,10 +46,10 @@ body {
 }
 
 .model-image {
-	width: 200px;
-	height: 300px;
+	width: 400px; /* ändra här */
+	height: 600px; /* ändra här */
 	object-fit: cover;
-	border-radius: 10px;
+	border-radius: 13px;
 }
 
 .model-label {
