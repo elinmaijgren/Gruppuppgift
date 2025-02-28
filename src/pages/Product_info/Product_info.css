@@ -1,0 +1,67 @@
+.product-page {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.product-page img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-page h1 {
+  font-size: 24px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 13px;
+  color: #333;
+  width: 500px;
+}
+
+.product-info p:nth-of-type(1) {
+  font-size: 22px;
+  font-family: "Abel", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.product-page strong {
+  font-size: 15px;
+}
+
+.product-page .product-desc {
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 500px;
+  margin-bottom: 50px;
+}
+
+.product-page button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-family: "Abel", sans-serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 475px;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.product-page button:hover {
+  background-color: black;
+  color: white;
+}
