@@ -18,7 +18,7 @@ const Product_info = () => {
       <p>{product.description}</p>
       <p><strong>Pris:</strong> {product.price} SEK</p>
       <button
-        onClick={() => {
+        onClick={() => setCart([...cart, product])}>
           console.log("Lägger till i kundvagn:", product);
           
         }}
