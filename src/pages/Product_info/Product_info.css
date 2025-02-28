@@ -1,0 +1,45 @@
+/* Product_info.css */
+
+.product-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.product-page img {
+  width: 300px; /* Adjust as needed */
+  height: auto;
+  object-fit: cover;
+}
+
+.product-page h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-page p {
+  font-size: 16px;
+  color: #333;
+}
+
+.product-page strong {
+  font-size: 18px;
+}
+
+.product-page button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.product-page button:hover {
+  background-color: black;
+  color: white;
+}
