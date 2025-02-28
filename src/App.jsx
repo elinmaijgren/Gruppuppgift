@@ -17,6 +17,7 @@ function App() {
         <Route path="info/:id" element={<Product_info />} />
         <Route path="login" element={<Login />}></Route>
         <Route path="help" element={<Help />}></Route>
+        <Route path="confirmation" element={<Confirmation />} />
       </Routes>
       <Footer />
 
