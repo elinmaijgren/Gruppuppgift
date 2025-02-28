@@ -17,7 +17,8 @@ const Product_info = () => {
       <div className="product-info">
         <h1>{product.title}</h1>
         <p>{product.price} SEK</p>
-        <p>{product.description}</p>
+
+        <p className="product-desc">{product.description}</p>
 
         <button
           onClick={() => {
