@@ -6,6 +6,7 @@ import KundvagnSida from "./pages/Kundvagn/KundvagnSida";
 import Footer from "./components/Footer/Footer";
 import Login from "./pages/Login/Login";
 import Help from "./pages/Help/Help";
+import Confirmation from "./pages/Confirmation/Confirmation"
 
 function App() {
   return (
