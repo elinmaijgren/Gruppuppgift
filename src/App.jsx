@@ -14,7 +14,6 @@ function App() {
         <Route path="kundvagnSida" element={<KundvagnSida />} />
         <Route path="info/:id" element={<Product_info />} />
       </Routes>
-
     </>
   );
 }

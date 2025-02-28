@@ -1,0 +1,17 @@
+.confirmation-container {
+    font-family: "Italiana", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.confirmation-btn {
+    text-decoration: none;
+    padding: 0.7rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
