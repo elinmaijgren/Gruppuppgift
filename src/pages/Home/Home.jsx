@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import api from "../../hooks/api";
 import Produkt from "../../components/Produkt/Produkt";
-import Footer from "../../components/Footer/Footer"
+
 
 function Home() {
   const { products, categories, loading, error } = api();
@@ -38,7 +38,7 @@ function Home() {
           <p>Inga produkter tillgängliga för den här kategorin.</p>
         )}
       </div>
-      <Footer />
+      
     </div>
   );
 }
