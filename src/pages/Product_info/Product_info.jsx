@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import api from "../../hooks/api";
-
+import { useCart } from "../../hooks/useCart";
 
 const Product_info = () => {
   const { id } = useParams();
-  
+  const { cart, setCart } = useCart();
   const { product, loading, error } = api(id);
 
   if (loading) return <p>Laddar produkt...</p>;
