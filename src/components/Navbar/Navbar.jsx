@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HamburgerMenu from "../Hamburgermeny/HamburgerMenu";
 import "./Navbar.css";
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <nav className="nav">
-      <div className="nav-logo">
+       <div className="nav-logo">
         <Link to="/">BLAAAA</Link>
       </div>
 
@@ -31,8 +32,9 @@ const navbar = () => {
           </Link>
         </li>
       </ul>
+      <HamburgerMenu className="hamburger-container" />
     </nav>
   );
 };
 
-export default navbar;
+export default Navbar;
