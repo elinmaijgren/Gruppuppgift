@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import api from "../../hooks/api";
-import { useCart } from "../../hooks/useCart";
+import useCart from "../../hooks/useCart";
 
 const Product_info = () => {
   const { id } = useParams();
-  const { cart, setCart } = useCart();
+  const { kundvagn, addToKundvagn } = useCart();
   const { product, loading, error } = api(id);
 
   if (loading) return <p>Laddar produkt...</p>;
@@ -17,12 +17,10 @@ const Product_info = () => {
       <h1>{product.title}</h1>
       <p>{product.description}</p>
       <p><strong>Pris:</strong> {product.price} SEK</p>
-      <button
-        onClick={() => setCart([...cart, product])}>
+      <button onClick={() => {
+          addToKundvagn(product);
           console.log("Lägger till i kundvagn:", product);
-          
-        }}
-      >
+          }}>
         Lägg till i kundvagn
       </button>
     </div>

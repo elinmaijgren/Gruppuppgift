@@ -1,23 +1,23 @@
 import React from 'react'
 import { createContext, useState } from 'react'
 
-const contextKundvagn = createContext();
+const CartContext = createContext();
 
 function ShoppingCartProvider({ children }){
     const [kundvagn, setKundvagn] = useState([]);
 
-    function addToCart(product){
+    function addToKundvagn(product){
         setKundvagn([...kundvagn, product]);
 }
 
 return(
-    <contextKundvagn.Provider value={{kundvagn, addToKundvagn}}>
+    <CartContext.Provider value={{ kundvagn, addToKundvagn }}>
         {children}
-    </contextKundvagn.Provider>
+    </CartContext.Provider>
 )
 }
 
-export default ShoppingCartProvider;
+export { ShoppingCartProvider, CartContext };
 
 
 /* function useKundvagn(){
