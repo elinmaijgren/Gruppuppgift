@@ -9,9 +9,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-logo">
-          {/* Logga eller bara namn? */}
-          <img src="/path-to-your-logo.png" alt="Logo" />
+        <div className="footer-text">
+          <h3>BLAAAA</h3>
         </div>
 
 

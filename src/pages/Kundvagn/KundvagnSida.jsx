@@ -1,4 +1,5 @@
 import React from 'react'
+import './Kundvagn.css'
 
 
 const kundvagnSida = () => {
@@ -6,7 +7,7 @@ const kundvagnSida = () => {
   return (
     <>
 
-      <div>
+      <div className='checkout-container'>
         <h1>
           Kundvagn
         </h1>
