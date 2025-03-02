@@ -7,10 +7,12 @@ import Footer from "./components/Footer/Footer";
 import Login from "./pages/Login/Login";
 import Help from "./pages/Help/Help";
 import Confirmation from "./pages/Confirmation/Confirmation"
+import { CartProvider } from "./pages/Kundvagn/CartContext";
 
 const App = () => {
   return (
     <>
+    <CartProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +23,7 @@ const App = () => {
         <Route path="confirmation" element={<Confirmation />} />
       </Routes>
       <Footer />
-
+      </CartProvider>
     </>
   );
 }
