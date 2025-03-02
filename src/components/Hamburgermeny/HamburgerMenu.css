@@ -1,0 +1,50 @@
+.hamburger-container {
+    position: relative;
+    display: none;
+  }
+  
+  .hamburger-icon {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: white;
+    border: 1px solid black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 120px;
+  }
+  
+  .menu li {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu li:hover {
+    background: lightgray;
+  }
+
+  @media (max-width: 768px) {
+    .hamburger-container {
+      display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+  }
+
+  
