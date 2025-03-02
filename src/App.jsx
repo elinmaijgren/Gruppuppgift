@@ -8,7 +8,7 @@ import Login from "./pages/Login/Login";
 import Help from "./pages/Help/Help";
 import Confirmation from "./pages/Confirmation/Confirmation"
 
-function App() {
+const App = () => {
   return (
     <>
       <Navbar />

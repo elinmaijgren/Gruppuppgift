@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./HamburgerMenu.css";
 
 const HamburgerMenu = () => {
@@ -11,9 +12,26 @@ const HamburgerMenu = () => {
       </button>
       {isOpen && (
         <ul className="menu">
-          <li>WOMEN’S</li>
-          <li>MEN’S</li>
-          <li>JEWELRY</li>
+          <li>
+            <Link to="#" className="link">
+              SEARCH
+            </Link>
+          </li>
+          <li>
+            <Link to="/Login" className="link">
+              LOG IN
+            </Link>
+          </li>
+          <li>
+            <Link to="/Help" className="link">
+              HELP
+            </Link>
+          </li>
+          <li>
+            <Link to="/kundvagnSida" className="link">
+              SHOPPING BAG
+            </Link>
+          </li>
         </ul>
       )}
     </div>
