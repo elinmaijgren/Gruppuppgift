@@ -1,9 +1,20 @@
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import "./KundvagnSida.css";
 
 const KundvagnSida = () => {
   const { cart, removeFromCart, updateQuantity, clearCart } = useContext(CartContext);
+  const navigate = useNavigate(); 
+
+  const handleCheckout = () => {
+    if (cart.length === 0) {
+      return;
+    }
+
+    clearCart(); 
+    navigate("/confirmation"); 
+  };
 
   return (
     <div className="cart-page">
@@ -28,6 +39,7 @@ const KundvagnSida = () => {
             </div>
           ))}
           <button onClick={clearCart}>Töm kundvagn</button>
+          <button onClick={handleCheckout} className="checkout-btn">Slutför köp</button>
         </div>
       )}
     </div>

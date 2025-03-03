@@ -1,0 +1,81 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 4rem;
+    box-sizing: border-box;
+  }
+  
+  .nav-logo {
+    font-size: 3rem;
+    list-style: none;
+    font-family: "Italiana", sans-serif;
+  }
+  
+  .nav-logo a {
+    /* Target the anchor inside .nav-logo */
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-logo:visited,
+  .nav-logo:active {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    align-items: flex-start;
+  }
+  
+  .link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: #a0aec0;
+  }
+  
+  .cart-badge {
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20%;
+    padding: 0.2rem 0.5rem;
+    margin-left: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .nav-logo {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .nav-logo {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (min-width: 375px) {
+    .nav {
+      padding: 0.5rem 2rem;
+    }
+  }
+  
+  
