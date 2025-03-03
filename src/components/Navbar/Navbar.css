@@ -47,6 +47,16 @@
   color: #a0aec0;
 }
 
+.cart-badge {
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 20%;
+  padding: 0.2rem 0.5rem;
+  margin-left: 5px;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -67,3 +77,4 @@
     padding: 0.5rem 2rem;
   }
 }
+
