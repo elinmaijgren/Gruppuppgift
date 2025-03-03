@@ -89,7 +89,6 @@ body {
 }
 
 .product-card:hover {
-	transform: translateY(-5px);
 	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -129,15 +128,4 @@ body {
 
 .product-button:hover {
 	background: #357abd;
-}
-
-.home-container footer {
-	margin-top: 80px;
-	width: 100%;
-	text-align: center;
-	padding: 20px;
-	background: var(--accent-color);
-	color: white;
-	font-size: 1rem;
-	border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
