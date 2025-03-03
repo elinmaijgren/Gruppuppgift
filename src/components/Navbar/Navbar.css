@@ -47,20 +47,12 @@
   color: #a0aec0;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  .nav-logo {
-    font-size: 2rem;
-  }
-}
-
 @media (min-width: 375px) {
   .nav {
     padding: 0.5rem 2rem;
   }
 }
+
 @media (min-width: 768px) {
   .nav-logo {
     font-size: 3rem;
@@ -74,11 +66,5 @@
 @media (min-width: 1024px) {
   .nav-links {
     display: flex;
-  }
-}
-
-@media (min-width: 375px) {
-  .nav {
-    padding: 0.5rem 2rem;
   }
 }
