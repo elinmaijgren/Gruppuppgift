@@ -1,27 +1,39 @@
 .confirmation-container {
-    font-family: "Italiana", sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-
-.confirmation-btn {
-    text-decoration: none;
-    padding: 0.7rem;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.confirmation-container {
     height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
+    gap: 50px; 
     box-sizing: border-box;
     overflow: hidden;
-  }
+}
+
+.confirmation-text {
+    text-align: center;
+    margin: 0;
+}
+.confirmation-btn {
+    text-decoration: none;
+    padding: 13px;
+    background-color: black;
+    color: white;
+    width: 100%; 
+    max-width: 300px; 
+    text-align: center; 
+    font-size: 10px !important; 
+}
+
+@media (min-width: 768px) {
+.confirmation-btn {
+    width: 200px; 
+    background-color: white;
+    color: black;
+    font-size: 14px !important;
+}
+
+.confirmation-btn:hover {
+    background: black;
+    color: white;
+ }
+}
