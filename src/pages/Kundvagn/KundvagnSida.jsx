@@ -23,9 +23,9 @@ const KundvagnSida = () => {
   return (
     <div className="checkout-container">
       <div className="cart-page">
-        <h1>Kundvagn</h1>
+        <h1>SHOPPING BAG</h1>
         {cart.length === 0 ? (
-          <p>What??? Ska du inte köpa? :P</p>
+          <p>What??? :P</p>
         ) : (
           <div className="cart-items">
             {cart.map((item) => (
@@ -34,12 +34,12 @@ const KundvagnSida = () => {
                 <div className="cart-item-content">
                   <h2>{item.title}</h2>
                   <p>{item.price} SEK</p>
-                  <div className="quantity-controls">
+                  <div style={{width: "27%"}}className="quantity-controls">
                     <button onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</button>
                     <span>{item.quantity}</span>
                     <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
                   </div>
-                  <button className="remove-button" onClick={() => removeFromCart(item.id)}>Ta bort</button>
+                  <button className="remove-button" onClick={() => removeFromCart(item.id)}>Remove</button>
                 </div>
               </div>
             ))}
@@ -53,8 +53,8 @@ const KundvagnSida = () => {
             </div>
 
             <div className="cart-buttons">
-              <button onClick={clearCart} className="clear-cart-btn">Töm kundvagn</button>
-              <button onClick={handleCheckout} className="checkout-btn">Slutför köp</button>
+              <button onClick={clearCart} className="clear-cart-btn">Clear Cart</button>
+              <button onClick={handleCheckout} className="checkout-btn">Complete Purchase</button>
             </div>
           </>
         )}
