@@ -14,7 +14,13 @@
     color: white;
     border-radius: 5px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
+
+.confirmation-btn:hover {
+    background-color: #2f373f; 
+    color: white;
+  }
 
 .confirmation-container {
     height: 90vh;
