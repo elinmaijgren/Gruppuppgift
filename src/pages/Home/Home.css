@@ -11,6 +11,8 @@
 
 html,
 body {
+	overflow-x: hidden;
+	width: 100%;
 	font-family: "Italiana", serif;
 	height: 100%;
 	margin: 0;
@@ -28,7 +30,6 @@ body {
 	flex-direction: column;
 	align-items: center;
 	padding: 100px 5% 40px;
-	width: 100%;
 	max-width: 1400px;
 	margin: auto;
 }
@@ -72,6 +73,7 @@ body {
 	justify-content: center;
 	width: 100%;
 	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .product-card {
