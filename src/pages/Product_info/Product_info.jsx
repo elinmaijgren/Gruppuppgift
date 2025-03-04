@@ -9,20 +9,22 @@ const Product_info = () => {
   const { addToCart } = useContext(CartContext);
   const { product, loading, error } = api(id);
 
-  if (loading) return <p>Laddar produkt...</p>;
-  if (error) return <p>Något gick fel: {error.message}</p>;
-  if (!product) return <p>Produkten hittades inte.</p>;
+  if (loading) return <p>Loading product...</p>;
+  if (error) return <p>Something went wrong: {error.message}</p>;
+  if (!product) return <p>Product not found.</p>;
 
   return (
     <div className="product-page">
-      <img src={product.image} alt={product.title} />
-      <div className="product-info">
+      <div className="product-info-container">
+        <img src={product.image} alt={product.title} />
+        <div className="product-info">
         <h1>{product.title}</h1>
         <p>{product.price} SEK</p>
         <p className="product-desc">{product.description}</p>
-        <button onClick={() => addToCart(product)}>LÄGG TILL</button>
+        <button onClick={() => addToCart(product)}>ADD</button>
       </div>
     </div>
+  </div>
   );
 };
 
