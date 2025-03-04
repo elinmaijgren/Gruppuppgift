@@ -48,13 +48,14 @@
   }
   
   .cart-badge {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 0.8rem;
     font-weight: bold;
-    border-radius: 20%;
-    padding: 0.2rem 0.5rem;
-    margin-left: 5px;
+    border-radius: 2px;
+    padding: 0.1rem 0.2rem;
+    margin-left: 9px;
+    border: 1px solid black;;
   }
   
   @media (max-width: 768px) {
