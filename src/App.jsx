@@ -8,6 +8,7 @@ import Login from "./pages/Login/Login";
 import Help from "./pages/Help/Help";
 import Confirmation from "./pages/Confirmation/Confirmation";
 import CartProvider from "./context/CartContext";
+import Search from "./pages/Search/Search";
 
 const App = () => {
 	return (
@@ -17,6 +18,7 @@ const App = () => {
 				<Route path="/" element={<Home />} />
 				<Route path="kundvagnSida" element={<KundvagnSida />} />
 				<Route path="info/:id" element={<Product_info />} />
+        <Route path="/search" element={<Search />} />
 				<Route path="login" element={<Login />} />
 				<Route path="help" element={<Help />} />
 				<Route path="confirmation" element={<Confirmation />} />
