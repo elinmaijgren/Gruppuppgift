@@ -6,10 +6,10 @@ const Confirmation = () => {
   return (
     <>
     <div className='confirmation-container'>
-        <h1 className='confirmation-text'>Tack för ditt köp!</h1>
+        <h1 className='confirmation-text'>Thank you for your purchase!</h1>
         <Link to="/">
             <button className='confirmation-btn'>
-                ÅTERGÅ TILL STARTSIDAN
+                RETURN TO HOMEPAGE
             </button>
         </Link>
     </div>
